@@ -1,0 +1,50 @@
+﻿@model List<AppUser>
+@{
+    ViewData["Title"] = "Chat";
+}
+
+<h1>Chat</h1>
+<h3>Users</h3>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2">
+            <ul class="list-group">
+                @foreach (AppUser appUser in Model)
+                {
+                    <li id="@appUser.Id" data-name="@(appUser.Name+" "+appUser.SurName)" class="list-group-item userItem">@appUser.Name @appUser.SurName <span style="width:10px; height:10px;" class="rounded-circle  @(appUser.ConnectionId != null?"bg-success":"bg-secondary")"></span></li>
+                }
+            </ul>
+        </div>
+        <div class="col-lg-10 ">
+            <audio id="buzzer" src="~/assets/Sounds/videoplayback.m4a" type="audio/ogg"></audio>
+            <audio id="buzzer1" src="~/assets/Sounds/videoplayback1.m4a" type="audio/ogg"></audio>
+            <div>
+                <h1 class="userName"></h1>
+            </div>
+            <div style="height: 250px; overflow:auto">
+                <ul class="list-group messageContainer">
+                    @*<li class="list-group-item">First</li>
+                <li class="list-group-item text-right">Second</li>*@
+                </ul>
+            </div>
+            <div>
+                <form>
+                    <input type="hidden" value="" id="userId" />
+                    <div class="form-row align-items-center">
+                        <div class="col">
+                            <input type="text" class="form-control mb-2" id="message">
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-primary mb-2 sendMessageBtn">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*@section Script{
+    <script src="~/assets/js/chat.js"></script>
+}*@

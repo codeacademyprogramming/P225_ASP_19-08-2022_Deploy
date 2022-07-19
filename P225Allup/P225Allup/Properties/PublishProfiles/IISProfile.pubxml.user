@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIIlKA+B4fUePc/t3V/q0yAAAAAACAAAAAAADZgAAwAAAABAAAABWZlBvBYUonuBQ18n+DuT9AAAAAASAAACgAAAAEAAAAF2jilyiYwAKXxN5+Z/K/voYAAAAj7ykg36HkON0xVT8Wa5/Eh1hsRtNkrK4FAAAAGUioi/TJl6txolgVYz6qrvBGb1+</EncryptedPassword>
+    <History>True|2022-07-19T13:03:43.5619529Z;False|2022-07-19T17:00:50.9571678+04:00;False|2022-07-19T16:59:23.7663402+04:00;False|2022-07-19T16:58:18.9774049+04:00;False|2022-07-19T16:57:29.1497839+04:00;False|2022-07-19T16:56:38.0318618+04:00;False|2022-07-19T16:55:11.7065254+04:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=SQL5080.site4now.net%3bInitial Catalog=db_a8a5f0_vusalmi%3bUser Id=db_a8a5f0_vusalmi_admin%3bPassword=Member%40123</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
